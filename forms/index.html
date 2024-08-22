@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>PROJECT FOR FORMS</title>
-        <link rel="stylesheet" href="C:\Users\saksh\Downloads\web development\webdevelopmentproject\forms\style.css"/>
+        <link rel="stylesheet" href="\style.css"/>
     </head >
 
     <body>
         <h1>Project Management</h1>
+        <div>
         <form action="/submit" method="post">
             <table>
                 <tr>
@@ -15,12 +16,41 @@
                 <td><input type="text" name="p_name" id="nm"></td>
                 </tr>
                 <tr>
-                <td><label for="email">email</label>
+                <td><label for="email">Email</label>
                 <td><input type="email" name="email" id="email"></td>
                 </tr>  
-            </table>
-            <select name="" id="">
-                <option value="">optio1</option>
-
-            </select>
+                <tr>
+                    <td><label for="drop_down">Assigned to</label></td>
+                    <td><select name="drop_down" id="drop_down">
+                    <option value="">Doc.Rahul Aggarwal</option>
+                    <option value="">Doc.Mansi Sinha</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Start_Date">Start Date</label></td>
+                    <td><input type="date" name="Start_Date" id="Start_Date"></td>
+                </tr>
+                <tr>
+                    <td><label for="End_Date">End Date</label></td>
+                    <td><input type="date" name="End_Date" id="End_Date"></td>
+                </tr>
+                <tr>
+                    <td><label for="Priority">Priority</label></td>
+                    <td><input type="radio" name="radio" id=""Priority>High
+                    <input type="radio" name="radio" id=""Priority>Average
+                    <input type="radio" name="radio" id=""Priority>Low</td>
+                </tr>
+                <tr>
+                    <td><label for="Description">Description</label>
+                    </td>
+                    <td><textarea name="" id=""></textarea></td>
+                </tr>
+                <tr>
+                    <td><button>submit</button></td>
+                </tr>
+        </table>
         </form>
+    </div>
+    </body>
+         
